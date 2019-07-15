@@ -22,10 +22,9 @@
                 </ul>
             </nav>
         </header>
-        <form action="https://formspree.io/DJAPavlik@gmail.com" method="POST">  
-          <!--  https://formspree.io/DJAPavlik@gmail.com  -->
+      <!--  <form action="https://formspree.io/DJAPavlik@gmail.com" method="POST">  -->
         <main>
-            <h4>I appreciate your visit to my page.  
+            <h4>I appreciate your vist to my page.  
                 </br></br>I am always open to comments, compliments or conversation. 
                 </br>Fill-in the form and submit your comments.
                 </br></br>Thanks
@@ -49,55 +48,31 @@
             </div>
 
             <div>
-                <button id="btnSubmit">Send</button>
+                <input type="submit" value="Send">
             </div>
             <input type="text" name="_gotcha" style="display:none">
             <input type="hidden" name="_next" value="https://DJAPavlik.github.io/thanks">
         </main>
         </form>
         <script>
-/* --   TEST VERSION TO INSURE ALL FIELDS ARE FILLED  // */
 
-                var btn = document.getElementById('btnSubmit');
-                // var nav = document.querySelector('nav');
-                btn.addEventListener(
-                  'click',
-                  function(){
-
-                    console.log("In CLICK!!!");
-                    
-                    var name = document.getElementById('name').value.trim();
-                    var email = document.getElementById("email").value.trim();
-                    var msg = document.getElementById("message").value.trim();
-
-                    
-                    document.getElementById("errName").innerHTML ='';
-                    document.getElementById("errEmail").innerHTML='';
-                    document.getElementById("errMsg").innerHTML='';
-
-                    if (name === "" || email === "" || msg === "" ) 
-                      {
-                          if (name === "")
-                            { document.getElementById("errName").innerHTML = "Name Required";}
-                          console.log("One of them is blank");
-                      }
-                    else
-                      {
-                          console.log("All are OKAY!!!");
-                      }
-
-
-                  
-                  }
-                );
-
-/*-- END TEST VERSION FOR ALL Fields filled */
+                var toggleMenu = document.getElementById('toggleMenu');
                 var nav = document.querySelector('nav');
                 toggleMenu.addEventListener(
                   'click',
                   function(){
 
+                    console.log("In CLICK!!!");
                     
+                    var name = document.getElementById("name").innerHTML;
+                    var email = document.getElementById("email").innerHTML;
+                    var msg = document.getElementById("message").innerHTML;
+
+                    console.log(name);
+                    console.log(email);
+                    console.log(msg);
+
+
                     if(nav.style.display=='block'){
                       nav.style.display='none';
                     }else{

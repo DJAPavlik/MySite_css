@@ -90,7 +90,7 @@ main {
 
 #second {
   width: 300px;
-  float: right;
+  float: left;
   height: 300px;
   background-color: white; }
 
@@ -118,4 +118,4 @@ main {
     display: block;
     border-bottom: 1px solid #777; } }
 
-
+/*# sourceMappingURL=resume.css.map */
