@@ -1,2 +1,6 @@
-# microtrain1903.github.io
-My GitHub Pages Site
+# MySite_css
+
+A brief personal introduction via
+web-pages implemented using CSS.
+
+## Check my resume or contact me.
